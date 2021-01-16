@@ -1,2 +1,2 @@
-# mailerLite
-MailerLIte HTML Email
+# MailerLite
+MailerLite HTML Email
