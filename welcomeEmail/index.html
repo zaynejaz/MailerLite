@@ -34,7 +34,7 @@
         <!--[if mso]>
         <style type="text/css">
             .h1,.h2,.h3,a,p,li,table,td {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: Arial, Helvetica, sans-serif !important;
             }
         </style>
         <![endif]-->
@@ -259,6 +259,10 @@
             /*+++++ANDROID CENTER FIX+++++*/
             div[style*="margin: 16px 0;"] {margin: 0 !important;}
 
+            /*+++++iPAD RIGHT WHITESPACE FIX+++++*/
+            @media screen and (device-width: 768px) and (device-height: 1024px) {
+                body {min-width: 701px}
+            }
             /*==========RESET STYLES==========*/
             /* body {height: 100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important;} */
             table {border-collapse: collapse !important; border-spacing: 0 !important;}
@@ -272,7 +276,7 @@
             .fontSettings{font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;color: #4e4e4e !important;}
             .fontPadding{padding-top: 15px; padding-right: 50px;padding-bottom: 15px; padding-left:50px;}
             .linkFormat{font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;color: #21C16C !important; font-weight: bold;text-decoration: none !important;}
-            .pLR-15-600 {padding-left: 15px !important;padding-right: 15px !important;}
+            .pLR-10 {padding-left: 10px !important;padding-right: 10px !important;}
 
             @media only screen and (min-width:600px) {
                 .emailContainer {width: 600px !important;}
@@ -286,9 +290,7 @@
                 .logoResponse img {height: auto !important;max-width: 158px !important;width: 100% !important;}
                 .text-center {text-align: center !important;}
                 .h-auto {height: auto !important;}
-                .p-25 {padding-top: 25px !important;padding-right: 25px !important;padding-bottom: 25px !important;padding-left: 25px !important;}
-                .pLR-10 {padding-left: 10px !important;padding-right: 10px !important;}
-                .pLR-15 {padding-left: 15px !important;padding-right: 15px !important;}
+                .p-25 {padding-top: 25px !important;padding-right: 25px !important;padding-bottom: 25px !important; padding-left: 25px !important;}
                 .pLR-25 {padding-left: 25px !important;padding-right: 25px !important;}
                 .pTB-50 {padding-top: 50px; padding-bottom: 50px !important;}
                 .pb-25 {padding-bottom: 25px !important;}
@@ -301,37 +303,60 @@
         </style>
     </head>
 
-    <body topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" dir="ltr" bgcolor="#F0F0F0" style="padding: 0; margin: 0; -webkit-font-smoothing:antialiased; -webkit-text-size-adjust:none; background: #F0F0F0;" >
+    <body topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" dir="ltr" class="fontSettings font-fallback" bgcolor="#F0F0F0" style="padding: 0; margin: 0; -webkit-font-smoothing:antialiased; -webkit-text-size-adjust:none; background: #F0F0F0 !important;" >
         <!--[if !mso]>
         <!-- -->
         <table role="presentation" width="100%" align="center" cellspacing="0" align='center' cellpadding="0" bgcolor="#F0F0F0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; -ms-text-size-adjust:100%; -webkit-text-size-adjust:100%; background: #F0F0F0; width:100%;">
             <tr>
                 <td class="pageContainer" align="center">
-                    <table role="presentation" width="100%" align="center" border="0" class="emailContainer" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; -ms-text-size-adjust:100%; -webkit-text-size-adjust:100%; width:100%; border:0;">
+                    <!--[if (gte mso 9)|(IE)]>
+                            <table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
+                            <tr>
+                                <td align="center" valign="top" width="600">
+                                <![endif]-->
+                    <table role="presentation" width="100%" align="center" border="0" class="emailContainer" cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; -ms-text-size-adjust:100%; -webkit-text-size-adjust:100%; max-width: 600px; width:100%; border:0;">
                         <tr>
-                            <td align="right"" bgcolor="#f0f0f0" class="fontSettings font-fallback" style="font-size: 12px; line-height: 1; padding: 0; padding-top:25px;">
+                            <td  bgcolor="#f0f0f0" class="fontSettings font-fallback" style="font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;color: #4e4e4e !important;font-size: 12px; line-height: 1; padding: 0; padding-top:25px; text-align: right !important;">
                                 <!--<![endif]-->
 
                                 
                                 <!-- ================ START OF EMAIL CONTENT ================ -->
                                 <!-- VIEW IN BROWSER START-->
-                                <span class="pr-10" style="white-space:nowrap;">
-                                    <a href="https://zaynejaz.github.io/MailerLite/welcomeEmail/" target="_blank" style="color: #4e4e4e; text-decoration: underline; background: #f0f0f0;">
-                                    View in browser
-                                    </a>
-                                </span>
+                                <!--[if (gte mso 9)|(IE)]>
+                                        <table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
+                                        <tr>
+                                            <td align="center" valign="top" width="600">
+                                            <![endif]-->
+                                <table role="presentation" width="600" align="right" border="0" bgcolor="#f0f0f0" class="w-100 fontSettings font-fallback" cellpadding="0" cellspacing="0" style="font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;color: #4e4e4e !important; max-width: 600px; width: 600px; background: #f0f0f0;">
+                                    <tr>
+                                        <td class="w-100" align="right">
+                                            <span class="pr-10" style="white-space:nowrap;">
+                                                <a href="https://zaynejaz.github.io/MailerLite/welcomeEmail/" target="_blank" style="font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;color: #4e4e4e; text-decoration: underline; background: #f0f0f0; ">
+                                                View in browser
+                                                </a>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!--[if (gte mso 9)|(IE)]>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        <![endif]-->
                                 <!-- VIEW IN BROWSER END-->
                                 
 
                                 <!-- 1. START - LOGO HEADER -->
+                                <center>
                                 <!--[if (gte mso 9)|(IE)]>
                                           <table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
                                             <tr>
                                               <td align="center" valign="top" width="600">
                                                 <![endif]-->
-                                <table role="presentation"width="600" align="center" border="0" class="w-100 fontSettings font-fallback" cellpadding="0" cellspacing="0" style="max-width: 600px; width: 600px;">
+                                <table role="presentation"width="600" align="center" border="0" class="w-100 fontSettings font-fallback" cellpadding="0" cellspacing="0" style="max-width: 600px; width: 600px;font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;color: #4e4e4e !important;">
                                     <tr>
                                         <td class="w-100">
+                                            <center>
                                             <!--[if (gte mso 9)|(IE)]>
                                                       <table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
                                                         <tr>
@@ -341,7 +366,22 @@
                                                 <tr>
                                                     <td align="center" class="text-center h-auto logoResponse pTB-50 pLR=25" style="padding-top: 50px; padding-right: 50px; padding-bottom: 40px; padding-left: 50px; background: #f0f0f0;">
                                                         <a href="http://maillite.com" target="_blank">
+                                                            <center>
+                                                        <!--[if mso]>
+                                                            <table width="100%">
+                                                                <tr>
+                                                                    <td>
+                                                                        <img width="158" src="https://raw.githubusercontent.com/zaynejaz/MailerLite/main/welcomeEmail/logos/mailerliteLogo.png" alt="MailerLite Logo" style="text-align: center; width:158px; border: 0; text-decoration:none; vertical-align: middle;">
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                                <div style="display:none">
+                                                            <![endif]-->
                                                             <img src="https://raw.githubusercontent.com/zaynejaz/MailerLite/main/welcomeEmail/logos/mailerliteLogo.png" width="158" border="0" alt="MailerLite Logo"/>
+                                                            <!--[if mso]>
+                                                                  </div>
+                                                               <![endif]-->
+                                                            </center>
                                                         </a>
                                                     </td>
                                                 </tr>
@@ -351,6 +391,7 @@
                                                         </tr>
                                                       </table>
                                                       <![endif]-->
+                                                    </center>
                                         </td>
                                     </tr>
                                 </table>
@@ -360,6 +401,7 @@
                                           </table>
                                           <![endif]-->
                                 <!-- 1. END - LOGO HEADER -->
+                                </center>
 
 
                                 <!-- 2. START - HERO IMAGE: Welcome -->
@@ -371,13 +413,36 @@
                                 <table role="presentation" width="100%" align="center" border="0" bgcolor="#FFFFFF" class="w-100"cellspacing="0" cellpadding="0" style="background: #FFFFFF; max-width: 600px; width: 100%;">
                                     <tr>
                                         <td width="100%" align="center" bgcolor="#FFFFFF" class="w-100">
+                                            <!--[if (gte mso 9)|(IE)]>
+                                        <table align="center" border="0" cellspacing="0" cellpadding="0" width="100%">
+                                            <tr>
+                                                <td align="center" valign="top" width="100%">
+                                                    <![endif]-->
                                             <table role="presentation" width="100%" class="w-100" align="center" border="0" bgcolor="#FFFFFF" cellspacing="0" cellpadding="0" style="background: #FFFFFF; width: 100%;">
                                                 <tr>
                                                     <td width="100%" align="center" bgcolor="#FFFFFF" class="imgHautoW100 h-auto">
-                                                        <img border="0" align="center" src="https://raw.githubusercontent.com/zaynejaz/MailerLite/main/welcomeEmail/heroWelcome.gif" width="100%" alt="Welcome from the team at MailerLite" class="imgH100Wauto" style="display: block;"/>
+                                                        <!--[if mso]>
+                                                                <table width="100%">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <img width="600" src="https://raw.githubusercontent.com/zaynejaz/MailerLite/main/welcomeEmail/heroWelcomeMSO.png" alt="MailerLite Logo" style="text-align: center; max-width: 600px; width:100%; border: 0; text-decoration:none; vertical-align: middle;">
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <div style="display:none">
+                                                                <![endif]-->
+                                                        <img border="0" align="center" src="https://raw.githubusercontent.com/zaynejaz/MailerLite/main/welcomeEmail/heroWelcome.gif" width="600" alt="Welcome from the team at MailerLite" class="imgH100Wauto" style="display: block; max-width: 600px; width:100%;"/>
+                                                        <!--[if mso]>
+                                                              </div>
+                                                           <![endif]-->
                                                     </td>
                                                 </tr>
                                             </table>
+                                            <!--[if (gte mso 9)|(IE)]>
+                                                          </td>
+                                                        </tr>
+                                                      </table>
+                                                      <![endif]-->
                                             <!-- ========START row spacing======== -->
                                             <!--[if (gte mso 9)|(IE)]>
                                                     <table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
@@ -416,14 +481,14 @@
                                     <tr>
                                         <td align="center" class="w-100" style="padding:0px;" >
 
-                                <!--[if (gte mso 9)|(IE)]>
-                                    <table align="center" border="0" cellspacing="0" cellpadding="0" width="500">
-                                        <tr>
-                                            <td align="center" valign="top" width="500">
-                                                <![endif]-->
+                                            <!--[if (gte mso 9)|(IE)]>
+                                                <table align="center" border="0" cellspacing="0" cellpadding="0" width="500">
+                                                    <tr>
+                                                        <td align="center" valign="top" width="500">
+                                                            <![endif]-->
                                             <table role="presentation" width="100%" align="center" border="0" bgcolor="#FFFFFF" class="w-95" cellspacing="0" cellpadding="0" style="max-width: 500px; width: 100%; background: #ffffff; "`>
                                                 <tr>
-                                                    <td align="left" class="fontSettings font-fallback" style="font-size:32px;font-weight:bold;line-height:150%;text-transform:none;font-style:normal;text-decoration:none;text-align:left;" >
+                                                    <td align="left" class="fontSettings font-fallback" style="font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;color: #4e4e4e !important;font-size:32px;font-weight:bold;line-height:150%;text-transform:none;font-style:normal;text-decoration:none;text-align:left;" >
                                                         Thank you for joining!
                                                     </td>
                                                 </tr>
@@ -457,7 +522,7 @@
                                                                 <![endif]-->
                                             <table role="presentation" width="100%" align="center" border="0" bgcolor="#FFFFFF" class="w-100 w-95" cellspacing="0" cellpadding="0" style="max-width: 500px; width: 100%; background: #ffffff; "`>
                                                 <tr>
-                                                    <td align="left" class="fontSettings font-fallback" style="font-size:16px; font-weight:regular;line-height:27px; text-transform:none; font-style:normal; text-decoration:none;text-align:left;">
+                                                    <td align="left" class="fontSettings font-fallback" style="font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;color: #4e4e4e !important;font-size:16px; font-weight:regular;line-height:27px; text-transform:none; font-style:normal; text-decoration:none;text-align:left;">
                                                         <p class="font-fallback" style="padding-bottom:15px; margin:0; font-size:16px; font-weight:regular;line-height:27px; text-transform:none; font-style:normal; text-decoration:none;text-align:left;">
                                                             You can expect to receive a series of emails from us, filled with tips, and suggestions for your next best steps to become an email marketing expert. Get a head start at the <a href="https://www.mailerlite.com/blog" class="linkFormat" target="_blank">MailerLite Academy</a>.
                                                         </p>
@@ -513,28 +578,26 @@
                                             <tr>
                                                 <td align="center" valign="top" width="600">
                                                     <![endif]-->
-                                <table role="presentation" width="600" bgcolor="#FFFFFF" align="center" border="0" class="w-100" cellpadding="0" cellspacing="0"
-                                    style="max-width: 600px; width: 600px; background: #ffffff;">
+                                <table role="presentation" width="600" bgcolor="#FFFFFF" align="center" border="0" class="w-100" cellpadding="0" cellspacing="0" style="max-width: 600px; width: 600px; background: #ffffff;">
                                     <tr>
                                         <td class="w-100">
                                             <!--[if (gte mso 9)|(IE)]>
-                                        <table align="center" border="0" cellspacing="0" cellpadding="0" width="500">
-                                            <tr>
-                                                <td align="center" valign="top" width="500">
-                                                    <![endif]-->
-                                            <table role="presentation" width="500" bgcolor="#FFFFFF" align="center" border="0" class="w-100" cellspacing="0" cellpadding="0"  
-                                                 style="width: 500px; background: #ffffff">
+                                            <table align="center" border="0" cellspacing="0" cellpadding="0" width="500">
                                                 <tr>
-                                                    <td align="center" class="p-25 text-center h-auto pb-25" style="padding:0px; background: #FFFFFF; margin:0;">
+                                                    <td align="center" valign="top" width="500">
+                                                        <![endif]-->
+                                            <table role="presentation" width="500" bgcolor="#FFFFFF" align="center" border="0" class="w-100" cellspacing="0" cellpadding="0" style="width: 500px; background: #ffffff !important">
+                                                <tr>
+                                                    <td align="center" bgcolor="#ffffff" class="text-center h-auto" style="padding:0px; background: #FFFFFF !important; margin:0;">
                                                         <hr style="max-width: 500px; width:100%; padding:0; margin: 0; border: 0; border-bottom: 1px solid #F0EFEF">
                                                     </td>
                                                 </tr>
                                             </table>
                                             <!--[if (gte mso 9)|(IE)]>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                        <![endif]-->
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <![endif]-->
                                         </td>
                                     </tr>
                                 </table>
@@ -583,7 +646,7 @@
                                                 cellspacing="0" cellpadding="0" style="max-width: 500px; width: 100%; background: #ffffff; " `>
                                                 <tr>
                                                     <td align="left" class="fontSettings font-fallback"
-                                                        style="font-size:26px;font-weight:bold;line-height:150%;text-transform:none;font-style:normal;text-decoration:none;text-align:left;">
+                                                        style="font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;color: #4e4e4e !important;font-size:26px;font-weight:bold;line-height:150%;text-transform:none;font-style:normal;text-decoration:none;text-align:left;">
                                                         Questions? Connect with us!
                                                     </td>
                                                 </tr>
@@ -620,7 +683,7 @@
                                                 cellspacing="0" cellpadding="0" style="max-width: 500px; width: 100%; background: #ffffff;" `>
                                                 <tr>
                                                     <td align="left" class="fontSettings font-fallback"
-                                                        style="font-size:16px;font-weight:regular;line-height:27px;text-transform:none;font-style:normal;text-decoration:none;text-align:left;">
+                                                        style="font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;color: #4e4e4e !important;font-size:16px;font-weight:regular;line-height:27px;text-transform:none;font-style:normal;text-decoration:none;text-align:left;">
                                                         <p class="font-fallback" style="padding-bottom:15px; margin:0; font-size:16px;font-weight:regular;line-height:27px;text-transform:none;font-style:normal;text-decoration:none;text-align:left;">
                                                             For a quick answer, you can have a check our <a href="https://www.mailerlite.com/support" class="linkFormat" target="_blank">Knowledge base</a>.
                                                         </p>
@@ -631,11 +694,11 @@
                                                 </tr>
                                             </table>
                                             <!--[if (gte mso 9)|(IE)]>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                        <![endif]-->
-                                            <!-- ========row spacing======== -->
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <![endif]-->
+                                            <!-- ========START row spacing======== -->
                                             <!--[if (gte mso 9)|(IE)]>
                                         <table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
                                             <tr>
@@ -652,7 +715,7 @@
                                             </tr>
                                         </table>
                                         <![endif]-->
-                                            <!-- ========row spacing======== -->
+                                            <!-- ========END row spacing======== -->
 
                                             <!-- ========team images======== -->
                                             <!--[if (gte mso 9)|(IE)]>
@@ -660,7 +723,7 @@
                                             <tr>
                                                 <td align="center" valign="top" width="500">
                                                     <![endif]-->
-                                            <table role="presentation" width="500" align="center" border="0" class="w-100 fontSettings font-fallback" cellpadding="0" cellspacing="0" style="max-width: 500px; width: 500px;">
+                                            <table role="presentation" width="500" align="center" border="0" class="w-100 fontSettings font-fallback" cellpadding="0" cellspacing="0" style="max-width: 500px; width: 500px;font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;color: #4e4e4e !important;">
                                                 <tr>
                                                     <td class="w-100">
                                                         <!--[if (gte mso 9)|(IE)]>
@@ -671,37 +734,167 @@
                                                         <table role="presentation" width="500" class="w-100 w-95" cellspacing="0" cellpadding="0" border="0" bgcolor="#f0f0f0" align="center"
                                                             style="width: 500px; max-width: 500px;">
                                                             <tr>
-                                                                <td align="center" border="0" class="text-center h-auto" style="padding:0 ; background: #ffffff;">
-                                                                    <img src="https://raw.githubusercontent.com/zaynejaz/MailerLite/main/welcomeEmail/cs/1.png" border="0" alt="Customer support image" style="display: block; width: 100%;"/>
+                                                                <td align="center" valign="bottom" border="0" class="text-center h-auto" style="padding:0 ; background: #ffffff;">
+                                                                    <!--[if mso]>
+                                                                        <table width="100%">
+                                                                            <tr>
+                                                                                <td align="center" valign="top" border="0">
+                                                                                    <img width="100" src="https://raw.githubusercontent.com/zaynejaz/MailerLite/main/welcomeEmail/cs/1.png" alt="Customer support image" style="text-align: center; width: 100%; max-width:100px; border: 0; text-decoration:none; vertical-align: middle;">
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        <div style="display:none">
+                                                                    <![endif]-->
+                                                                    <img  width="100" width="100" src="https://raw.githubusercontent.com/zaynejaz/MailerLite/main/welcomeEmail/cs/1.png" border="0" alt="Customer support image" style="display: block;  width: 100%; max-width:100px; vertical-align: bottom;"/>
+                                                                    <!--[if mso]>
+                                                                            </div>
+                                                                        <![endif]-->
                                                                 </td>
-                                                                <td align="center" border="0" class="text-center h-auto" style="padding:0; background: #ffffff;">
-                                                                    <img src="https://raw.githubusercontent.com/zaynejaz/MailerLite/main/welcomeEmail/cs/2.png" border="0" alt="Customer support image" style="display: block;width: 100%;" />
+                                                                <td align="center" valign="bottom" border="0" class="text-center h-auto" style="padding:0; background: #ffffff;">
+                                                                    <!--[if mso]>
+                                                                        <table width="100%">
+                                                                            <tr>
+                                                                                <td align="center" valign="top" border="0">
+                                                                                    <img width="100" src="https://raw.githubusercontent.com/zaynejaz/MailerLite/main/welcomeEmail/cs/2.png" alt="Customer support image" style="text-align: center;  width: 100%; max-width:100px; border: 0; text-decoration:none; vertical-align: middle;">
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        <div style="display:none">
+                                                                    <![endif]-->
+                                                                    <img  width="100" src="https://raw.githubusercontent.com/zaynejaz/MailerLite/main/welcomeEmail/cs/2.png" border="0" alt="Customer support image" style="display: block; width: 100%; max-width:100px;"/>
+                                                                    <!--[if mso]>
+                                                                            </div>
+                                                                        <![endif]-->
                                                                 </td>
-                                                                <td align="center" border="0" class="text-center h-auto" style="padding:0; background: #ffffff;">
-                                                                    <img src="https://raw.githubusercontent.com/zaynejaz/MailerLite/main/welcomeEmail/cs/3.png" border="0" alt="Customer support image"style="display: block; width: 100%;" />
+                                                                <td align="center" valign="bottom" border="0" class="text-center h-auto" style="padding:0; background: #ffffff;">
+                                                                    <!--[if mso]>
+                                                                        <table width="100%">
+                                                                            <tr>
+                                                                                <td align="center" valign="top" border="0">
+                                                                                    <img width="100" src="https://raw.githubusercontent.com/zaynejaz/MailerLite/main/welcomeEmail/cs/3.png" alt="Customer support image" style="text-align: center;  width: 100%; max-width:100px; border: 0; text-decoration:none; vertical-align: middle;">
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        <div style="display:none">
+                                                                    <![endif]-->
+                                                                    <img  width="100" src="https://raw.githubusercontent.com/zaynejaz/MailerLite/main/welcomeEmail/cs/3.png" border="0" alt="Customer support image"style="display: block;  width: 100%; max-width:100px;"/>
+                                                                    <!--[if mso]>
+                                                                            </div>
+                                                                        <![endif]-->
                                                                 </td>
-                                                                <td align="center" border="0" class="text-center h-auto" style="padding:0; background: #ffffff;">
-                                                                    <img src="https://raw.githubusercontent.com/zaynejaz/MailerLite/main/welcomeEmail/cs/4.png" border="0" alt="Customer support image"style="display: block;width: 100%;" />
+                                                                <td align="center" valign="bottom" border="0" class="text-center h-auto" style="padding:0; background: #ffffff;">
+                                                                    <!--[if mso]>
+                                                                        <table width="100%">
+                                                                            <tr>
+                                                                                <td align="center" valign="top" border="0">
+                                                                                    <img width="100" src="https://raw.githubusercontent.com/zaynejaz/MailerLite/main/welcomeEmail/cs/4.png" alt="Customer support image" style="text-align: center;  width: 100%; max-width:100px; border: 0; text-decoration:none; vertical-align: middle;">
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        <div style="display:none">
+                                                                    <![endif]-->
+                                                                    <img  width="100" src="https://raw.githubusercontent.com/zaynejaz/MailerLite/main/welcomeEmail/cs/4.png" border="0" alt="Customer support image"style="display: block;  width: 100%; max-width:100px;"/>
+                                                                    <!--[if mso]>
+                                                                            </div>
+                                                                        <![endif]-->
                                                                 </td>
-                                                                <td align="center" border="0" class="text-center h-auto" style="padding:0; background: #ffffff;">
-                                                                    <img src="https://raw.githubusercontent.com/zaynejaz/MailerLite/main/welcomeEmail/cs/5.png" border="0" alt="Customer support image" style="display: block;width: 100%;" />
+                                                                <td align="center" valign="bottom" border="0" class="text-center h-auto" style="padding:0; background: #ffffff;">
+                                                                    <!--[if mso]>
+                                                                        <table width="100%">
+                                                                            <tr>
+                                                                                <td align="center" valign="top" border="0">
+                                                                                    <img width="100" src="https://raw.githubusercontent.com/zaynejaz/MailerLite/main/welcomeEmail/cs/5.png" alt="Customer support image" style="text-align: center;  width: 100%; max-width:100px; border: 0; text-decoration:none; vertical-align: middle;">
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        <div style="display:none">
+                                                                    <![endif]-->
+                                                                    <img  width="100" src="https://raw.githubusercontent.com/zaynejaz/MailerLite/main/welcomeEmail/cs/5.png" border="0" alt="Customer support image" style="display: block;  width: 100%; max-width:100px;"/>
+                                                                    <!--[if mso]>
+                                                                            </div>
+                                                                        <![endif]-->
                                                                 </td>
                                                             </tr>
                                                             <tr>
-                                                                <td align="center" border="0" class="text-center h-auto" style="padding:0; background: #ffffff;">
-                                                                    <img src="https://raw.githubusercontent.com/zaynejaz/MailerLite/main/welcomeEmail/cs/6.png" border="0" alt="Customer support image" style="display: block; width: 100%;" />
+                                                                <td align="center" valign="top" border="0" class="text-center h-auto" style="padding:0; background: #ffffff;">
+                                                                    <!--[if mso]>
+                                                                        <table width="100%">
+                                                                            <tr>
+                                                                                <td align="center" valign="top" border="0">
+                                                                                    <img width="100" src="https://raw.githubusercontent.com/zaynejaz/MailerLite/main/welcomeEmail/cs/6.png" alt="Customer support image" style="text-align: center;  width: 100%; max-width:100px; border: 0; text-decoration:none; vertical-align: middle;">
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        <div style="display:none">
+                                                                    <![endif]-->
+                                                                    <img  width="100" src="https://raw.githubusercontent.com/zaynejaz/MailerLite/main/welcomeEmail/cs/6.png" border="0" alt="Customer support image" style="display: block;  width: 100%; max-width:100px;"/>
+                                                                    <!--[if mso]>
+                                                                            </div>
+                                                                        <![endif]-->
                                                                 </td>
-                                                                <td align="center" border="0" class="text-center h-auto" style="padding:0; background: #ffffff;">
-                                                                    <img src="https://raw.githubusercontent.com/zaynejaz/MailerLite/main/welcomeEmail/cs/7.png" border="0" alt="Customer support image" style="display: block;width: 100%;" />
+                                                                <td align="center" valign="top" border="0" class="text-center h-auto" style="padding:0; background: #ffffff;">
+                                                                    <!--[if mso]>
+                                                                        <table width="100%">
+                                                                            <tr>
+                                                                                <td align="center" valign="top" border="0">
+                                                                                    <img width="100" src="https://raw.githubusercontent.com/zaynejaz/MailerLite/main/welcomeEmail/cs/7.png" alt="Customer support image" style="text-align: center;  width: 100%; max-width:100px; border: 0; text-decoration:none; vertical-align: middle;">
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        <div style="display:none">
+                                                                    <![endif]-->
+                                                                    <img  width="100" src="https://raw.githubusercontent.com/zaynejaz/MailerLite/main/welcomeEmail/cs/7.png" border="0" alt="Customer support image" style="display: block;  width: 100%; max-width:100px;"/>
+                                                                    <!--[if mso]>
+                                                                            </div>
+                                                                        <![endif]-->
                                                                 </td>
-                                                                <td align="center" border="0" class="text-center h-auto" style="padding:0; background: #ffffff;">
-                                                                    <img src="https://raw.githubusercontent.com/zaynejaz/MailerLite/main/welcomeEmail/cs/8.png" border="0" alt="Customer support image" style="display: block; width: 100%;" />
+                                                                <td align="center" valign="top" border="0" class="text-center h-auto" style="padding:0; background: #ffffff;">
+                                                                    <!--[if mso]>
+                                                                        <table width="100%">
+                                                                            <tr>
+                                                                                <td align="center" valign="top" border="0">
+                                                                                    <img width="100" src="https://raw.githubusercontent.com/zaynejaz/MailerLite/main/welcomeEmail/cs/8.png" alt="Customer support image" style="text-align: center;  width: 100%; max-width:100px; border: 0; text-decoration:none; vertical-align: middle;">
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        <div style="display:none">
+                                                                    <![endif]-->
+                                                                    <img  width="100" src="https://raw.githubusercontent.com/zaynejaz/MailerLite/main/welcomeEmail/cs/8.png" border="0" alt="Customer support image" style="display: block;  width: 100%; max-width:100px;"/>
+                                                                    <!--[if mso]>
+                                                                            </div>
+                                                                        <![endif]-->
                                                                 </td>
-                                                                <td align="center" border="0" class="text-center h-auto" style="padding:0; background: #ffffff;">
-                                                                    <img src="https://raw.githubusercontent.com/zaynejaz/MailerLite/main/welcomeEmail/cs/9.png" border="0" alt="Customer support image" style="display: block;width: 100%;" />
+                                                                <td align="center" valign="top" border="0" class="text-center h-auto" style="padding:0; background: #ffffff;">
+                                                                    <!--[if mso]>
+                                                                        <table width="100%">
+                                                                            <tr>
+                                                                                <td align="center" valign="top" border="0">
+                                                                                    <img width="100" src="https://raw.githubusercontent.com/zaynejaz/MailerLite/main/welcomeEmail/cs/9.png" alt="Customer support image" style="text-align: center;  width: 100%; max-width:100px; border: 0; text-decoration:none; vertical-align: middle;">
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        <div style="display:none">
+                                                                    <![endif]-->
+                                                                    <img width="100" src="https://raw.githubusercontent.com/zaynejaz/MailerLite/main/welcomeEmail/cs/9.png" border="0" alt="Customer support image" style="display: block;  width: 100%; max-width:100px;"/>
+                                                                    <!--[if mso]>
+                                                                            </div>
+                                                                        <![endif]-->
                                                                 </td>
-                                                                <td align="center" border="0" class="text-center h-auto" style="padding:0; background: #ffffff;">
-                                                                    <img src="https://raw.githubusercontent.com/zaynejaz/MailerLite/main/welcomeEmail/cs/10.png" border="0" alt="Customer support image" style="display: block;width: 100%;" />
+                                                                <td align="center" valign="top" border="0" class="text-center h-auto" style="padding:0; background: #ffffff;">
+                                                                    <!--[if mso]>
+                                                                        <table width="100%">
+                                                                            <tr>
+                                                                                <td align="center" valign="top" border="0">
+                                                                                    <img width="100" src="https://raw.githubusercontent.com/zaynejaz/MailerLite/main/welcomeEmail/cs/10.png" alt="Customer support image" style="text-align: center;  width: 100%; max-width:100px; border: 0; text-decoration:none; vertical-align: middle;">
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        <div style="display:none">
+                                                                    <![endif]-->
+                                                                    <img width="100" src="https://raw.githubusercontent.com/zaynejaz/MailerLite/main/welcomeEmail/cs/10.png" border="0" alt="Customer support image" style="display: block;  width: 100%; max-width:100px;"/>
+                                                                    <!--[if mso]>
+                                                                            </div>
+                                                                        <![endif]-->
                                                                 </td>
                                                             </tr>
                                                         </table>
@@ -731,10 +924,10 @@
                                                 </tr>
                                             </table>
                                             <!--[if (gte mso 9)|(IE)]>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                        <![endif]-->
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <![endif]-->
                                             <!-- ========row spacing======== -->
                                         </td>
                                     </tr>
@@ -753,212 +946,287 @@
                                             <tr>
                                                 <td align="center" valign="top" width="600">
                                                     <![endif]-->
-                                <table role="presentation" width="600" bgcolor="#f0f0f0" align="center" border="0" class="w-100" cellpadding="0"
-                                    cellspacing="0" style="max-width: 600px; width: 600px; background: #f0f0f0;">
-                                    <tr>
-                                        <td align="center" bgcolor="#f0f0f0" class="w-100" style="padding:0px; background:#f0f0f0;">
-                                            <!--[if (gte mso 9)|(IE)]>
-                                        <table align="center" border="0" cellspacing="0" cellpadding="0" width="500">
-                                            <tr>
-                                                <td align="center" valign="top" width="500">
-                                                    <![endif]-->
-                                            <table role="presentation" width="500" align="center" border="0" bgcolor="#f0f0f0" class="w-100"
-                                                cellspacing="0" cellpadding="0" style="max-width: 500px; width: 100%; background: #f0f0f0;">
+                                    <table role="presentation" width="600" bgcolor="#f0f0f0" align="center" border="0" class="w-100" cellpadding="0"
+                                        cellspacing="0" style="max-width: 600px; width: 600px; background: #f0f0f0;">
+                                        <tr>
+                                            <td align="center" bgcolor="#f0f0f0" class="w-100" style="padding:0px; background:#f0f0f0;">
+                                                <!--[if (gte mso 9)|(IE)]>
+                                            <table align="center" border="0" cellspacing="0" cellpadding="0" width="500">
                                                 <tr>
-                                                    <td width="100%" bgcolor="#f0f0f0" style="background: #f0f0f0">
-                                                        <!-- ========START row spacing======== -->
-                                                        <!--[if (gte mso 9)|(IE)]>
-                                        <table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
-                                            <tr>
-                                                <td align="center" valign="top" width="600">
-                                                    <![endif]-->
-                                                        <table role="presentation" width="100%" align="center" bgcolor="#f0f0f0" border="0" class="w-100" cellspacing="0" cellpadding="0" style="width:100%;max-width:600px; background: #f0f0f0">
-                                                            <tr>
-                                                                <td height="30" style="line-height:30px; min-height:30px"></td>
-                                                            </tr>
-                                                        </table>
-                                                        <!--[if (gte mso 9)|(IE)]>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                        <![endif]-->
-                                                        <!-- ========END row spacing======== -->
-                                                        <!--[if (gte mso 9)|(IE)]>
-                                        <table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
-                                            <tr>
-                                                <td align="center" valign="top" width="600">
-                                                    <![endif]-->
-                                                        <table role="presentation" width="600" bgcolor="#f0f0f0" align="center" border="0" class="w-100" cellpadding="0" cellspacing="0" style="max-width: 600px; width: 600px; background: #f0f0f0;">
-                                                            <tr>
-                                                                <td align="center" bgcolor="#f0f0f0" style="padding: 0px;background: #f0f0f0;" class="p-25">
-                                                                    <table role="presentation" width="100%" align="center" bgcolor="#ffffff" border="0" class="w-100" cellpadding="0" cellspacing="0" >
-                                                                        <tr>
-                                                                            <td align="center" bgcolor="#f0f0f0" style="background: #f0f0f0;">
-                                                                                <!--[if (gte mso 9)|(IE)]>
-                                        <table align="center" border="0" cellspacing="0" cellpadding="0" width="500">
-                                            <tr>
-                                                <td align="center" valign="top" width="500">
-                                                    <![endif]-->
-                                                                                <table role="presentation" align="center" bgcolor="#f0f0f0" border="0" cellpadding="0" cellspacing="0" style="max-width: 500px;">
-                                                                                    <tr>
-                                                                                        <td width="40" align="center" bgcolor="#f0f0f0" class="pLR-15-600 pLR-10">
-                                                                                            <a href="https://www.facebook.com/mailerlite/" target="_blank"> 
-                                                                                                <img width="40" bgcolor="#f0f0f0" alt="facebook black round"  src="https://raw.githubusercontent.com/zaynejaz/MailerLite/main/welcomeEmail/logos/facebookLogo.png" border="0" style="display: block; background: #f0f0f0">
-                                                                                            </a>
-                                                                                        </td>
-                                                                                        <td width="40" align="center" bgcolor="#f0f0f0" class="pLR-15-600 pLR-10">
-                                                                                            <a href="https://www.youtube.com/channel/UCRWH1lQlbnqCrrYTfacklIQ" target="_blank"> 
-                                                                                                <img width="40" bgcolor="#f0f0f0" alt="youtube black round"  src="https://raw.githubusercontent.com/zaynejaz/MailerLite/main/welcomeEmail/logos/ytLogo.png" border="0" style="display: block; background: #f0f0f0" >
-                                                                                            </a>
-                                                                                        </td>
-                                                                                        <td width="40" align="center" bgcolor="#f0f0f0" class="pLR-15-600 pLR-10">
-                                                                                            <a href="https://twitter.com/mailerlite" target="_blank">
-                                                                                                <img width="40" bgcolor="#f0f0f0" alt="twitter black round"  src="https://raw.githubusercontent.com/zaynejaz/MailerLite/main/welcomeEmail/logos/twitterLogo.png" border="0" style="display: block; background: #f0f0f0">
-                                                                                            </a>
-                                                                                        </td>
-                                                                                        <td width="40" align="center" bgcolor="#f0f0f0" class="pLR-15-600 pLR-10">
-                                                                                            <a href="https://www.instagram.com/mailerlite/" target="_blank">
-                                                                                                <img width="40" bgcolor="#f0f0f0" alt="instagram black round" src="https://raw.githubusercontent.com/zaynejaz/MailerLite/main/welcomeEmail/logos/instagramLogo.png" border="0" style="display: block; background: #f0f0f0">
-                                                                                            </a>
-                                                                                        </td>
-                                                                                        <td width="40" align="center" bgcolor="#f0f0f0" class="pLR-15-600 pLR-10">
-                                                                                            <a href="https://www.linkedin.com/company/mailerlite-international/" target="_blank">
-                                                                                                <img width="40" bgcolor="#f0f0f0" alt="linkedin black round" src="https://raw.githubusercontent.com/zaynejaz/MailerLite/main/welcomeEmail/logos/linkedinLogo.png" border="0" style="display: block; background: #f0f0f0;">
-                                                                                            </a>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                </table>
-                                                                                <!--[if (gte mso 9)|(IE)]>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                        <![endif]-->
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td bgcolor="#f0f0f0" style="background: #f0f0f0;">
-                                                                                <!-- ========START row spacing======== -->
-                                                                                <!--[if (gte mso 9)|(IE)]>
-                                        <table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
-                                            <tr>
-                                                <td align="center" valign="top" width="600">
-                                                    <![endif]-->
-                                                                                <table role="presentation" width="100%" align="center" bgcolor="#f0f0f0" border="0" class="w-100" cellspacing="0"
-                                                                                    cellpadding="0" style="width:100%;max-width:600px; background: #f0f0f0;">
-                                                                                    <tr>
-                                                                                        <td height="40" style="line-height:40px; min-height:40px"></td>
-                                                                                    </tr>
-                                                                                </table>
-                                                                                <!--[if (gte mso 9)|(IE)]>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                        <![endif]-->
-                                                                                <!-- ========END row spacing======== -->
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td align="center" bgcolor="#f0f0f0" class="fontSettings font-fallback" style="font-size: 13px; font-weight: bold; line-height: 20px; background:#F0F0F0">
-                                                                                MailerLite
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td align="center" bgcolor="#f0f0f0" class="fontSettings font-fallback" 
-                                                                                style="font-size: 12px; line-height: 20px; background: #f0f0f0;">
-                                                                                Jono. Basanavičiaus g. 15
-                                                                                <br>
-                                                                                Vilnius 03108
-                                                                                <br>
-                                                                                Lithuania
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td bgcolor="#f0f0f0" style="background: #f0f0f0;">
-                                                                                <!-- ========START row spacing======== -->
-                                                                                <!--[if (gte mso 9)|(IE)]>
-                                        <table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
-                                            <tr>
-                                                <td align="center" valign="top" width="600">
-                                                    <![endif]-->
-                                                                                <table role="presentation" width="100%" align="center" bgcolor="#f0f0f0" border="0" class="w-100" cellspacing="0"
-                                                                                    cellpadding="0" style="width:100%;max-width:600px; background: #f0f0f0;">
-                                                                                    <tr>
-                                                                                        <td height="10" style="line-height:10px; min-height:10px"></td>
-                                                                                    </tr>
-                                                                                </table>
-                                                                                <!--[if (gte mso 9)|(IE)]>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                        <![endif]-->
-                                                                                <!-- =======END =ow spacing======== -->
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td align="center" bgcolor="#f0f0f0" class="fontSettings font-fallback" style="font-size: 11px; line-height: 20px; color: #4e4e4e; background:#f0f0f0;">
-                                                                                <p class="font-fallback" style="margin:0px;">
-                                                                                    You received this email
-                                                                                    because you signed up on our website.
-                                                                                </p>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td bgcolor="#f0f0f0" style="background: #f0f0f0;">
-                                                                                <!-- ========START row spacing======== -->
-                                                                                <!--[if (gte mso 9)|(IE)]>
-                                        <table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
-                                            <tr>
-                                                <td align="center" valign="top" width="600">
-                                                    <![endif]-->
-                                                                                <table role="presentation" width="100%" align="center" bgcolor="#f0f0f0" border="0" class="w-100" cellspacing="0" cellpadding="0" style="width:100%;max-width:600px; background:#f0f0f0;">
-                                                                                    <tr>
-                                                                                        <td height="10" style="line-height:10px; min-height:10px"></td>
-                                                                                    </tr>
-                                                                                </table>
-                                                                                <!--[if (gte mso 9)|(IE)]>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                        <![endif]-->
-                                                                                <!-- ========END row spacing======== -->
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td align="center" bgcolor="f0f0f0" class="fontSettings font-fallback" style="font-size: 12px; line-height: 20px;">
-                                                                                <a href="https://i.imgflip.com/15lw5y.jpg" target="_blank" style="color: #4e4e4e; text-decoration: underline; background: #f0f0f0;">
-                                                                                    Unsubscribe
-                                                                                </a>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </table>
-                                                                </td>
-                                                            </tr>
-                                                        </table>
-                                                        <!--[if (gte mso 9)|(IE)]>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                        <![endif]-->
+                                                    <td align="center" valign="top" width="500">
+                                                        <![endif]-->
+                                                <table role="presentation" width="500" align="center" border="0" bgcolor="#f0f0f0" class="w-100"
+                                                    cellspacing="0" cellpadding="0" style="max-width: 500px; width: 100%; background: #f0f0f0;">
+                                                    <tr>
+                                                        <td width="100%" bgcolor="#f0f0f0" style="background: #f0f0f0">
+                                                            <!-- ========START row spacing======== -->
+                                                            <!--[if (gte mso 9)|(IE)]>
+                                            <table align="center" border="0" cellspacing="0" cellpadding="0" width="500">
+                                                <tr>
+                                                    <td align="center" valign="top" width="500">
+                                                        <![endif]-->
+                                                            <table role="presentation" width="100%" align="center" bgcolor="#f0f0f0" border="0" class="w-100" cellspacing="0" cellpadding="0" style="width:100%;max-width:500px; background: #f0f0f0">
+                                                                <tr>
+                                                                    <td height="30" style="line-height:30px; min-height:30px"></td>
+                                                                </tr>
+                                                            </table>
+                                                            <!--[if (gte mso 9)|(IE)]>
                                                     </td>
                                                 </tr>
                                             </table>
+                                            <![endif]-->
+                                                            <!-- ========END row spacing======== -->
+                                                            <!--[if (gte mso 9)|(IE)]>
+                                            <table align="center" border="0" cellspacing="0" cellpadding="0" width="500">
+                                                <tr>
+                                                    <td align="center" valign="top" width="500">
+                                                        <![endif]-->
+                                                            <table role="presentation" width="100%" bgcolor="#f0f0f0" align="center" border="0" class="w-100" cellpadding="0" cellspacing="0" style="max-width: 500px; width: 100%; background: #f0f0f0; text-align: center;">
+                                                                <tr>
+                                                                    <td align="center" bgcolor="#f0f0f0" style="padding: 0px;background: #f0f0f0;" class="p-25">
+                                                                        <!--[if (gte mso 9)|(IE)]>
+                                                                                <table align="center" border="0" cellspacing="0" cellpadding="0" width="500">
+                                                                                    <tr>
+                                                                                        <td align="center" valign="top" width="500">
+                                                                                            <![endif]-->
+                                                                        <table role="presentation" width="100%" align="center" bgcolor="#ffffff" border="0" class="w-100" cellpadding="0" cellspacing="0" style="max-width: 500px; width: 100%;">
+                                                                            <tr>
+                                                                                <td align="center" bgcolor="#f0f0f0" style="background: #f0f0f0;">
+                                                                                    <!--[if (gte mso 9)|(IE)]>
+                                                                                <table align="center" border="0" cellspacing="0" cellpadding="0" width="500">
+                                                                                    <tr>
+                                                                                        <td align="center" valign="top" width="500">
+                                                                                            <![endif]-->
+                                                                                    <table role="presentation" align="center" bgcolor="#f0f0f0" border="0" cellpadding="0" cellspacing="0" style="max-width: 500px;">
+                                                                                        <tr>
+                                                                                            <td width="40" align="center" bgcolor="#f0f0f0" class="pLR-10" style="padding-right: 10px !important; padding-left: 10px !important;">
+                                                                                                <a href="https://www.facebook.com/mailerlite/" target="_blank"> 
+                                                                                                    <!--[if mso]>
+                                                                                                        <table width="40">
+                                                                                                            <tr>
+                                                                                                                <td>
+                                                                                                                    <img width="40" src="https://raw.githubusercontent.com/zaynejaz/MailerLite/main/welcomeEmail/logos/facebookLogo.png" alt="facebook black round logo" style="text-align:center; width: 40px; border: 0; text-decoration:none; vertical-align: middle;">
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                        </table>
+                                                                                                        <div style="display:none">
+                                                                                                    <![endif]-->
+                                                                                                    <img width="40" bgcolor="#f0f0f0" alt="facebook black round"  src="https://raw.githubusercontent.com/zaynejaz/MailerLite/main/welcomeEmail/logos/facebookLogo.png" border="0" style="display: block; background: #f0f0f0">
+                                                                                                    <!--[if mso]>
+                                                                                                        </div>
+                                                                                                    <![endif]-->
+                                                                                                </a>
+                                                                                            </td>
+                                                                                            <td width="40" align="center" bgcolor="#f0f0f0" class="pLR-10" style="padding-right: 10px !important; padding-left: 10px !important;">
+                                                                                                <a href="https://www.youtube.com/channel/UCRWH1lQlbnqCrrYTfacklIQ" target="_blank"> 
+                                                                                                    <!--[if mso]>
+                                                                                                        <table width="40">
+                                                                                                            <tr>
+                                                                                                                <td>
+                                                                                                                    <img width="40" src="https://raw.githubusercontent.com/zaynejaz/MailerLite/main/welcomeEmail/logos/ytLogo.png" alt="youtube black round" style="text-align:center; width: 40px; border: 0; text-decoration:none; vertical-align: middle;">
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                        </table>
+                                                                                                        <div style="display:none">
+                                                                                                    <![endif]-->
+                                                                                                    <img width="40" bgcolor="#f0f0f0" alt="youtube black round"  src="https://raw.githubusercontent.com/zaynejaz/MailerLite/main/welcomeEmail/logos/ytLogo.png" border="0" style="display: block; background: #f0f0f0" >
+                                                                                                    <!--[if mso]>
+                                                                                                        </div>
+                                                                                                    <![endif]-->
+                                                                                                </a>
+                                                                                            </td>
+                                                                                            <td width="40" align="center" bgcolor="#f0f0f0" class="pLR-10" style="padding-right: 10px !important; padding-left: 10px !important;">
+                                                                                                <a href="https://twitter.com/mailerlite" target="_blank">
+                                                                                                    <!--[if mso]>
+                                                                                                        <table width="40">
+                                                                                                            <tr>
+                                                                                                                <td>
+                                                                                                                    <img width="40" src="https://raw.githubusercontent.com/zaynejaz/MailerLite/main/welcomeEmail/logos/twitterLogo.png" alt="twitter black round" style="text-align:center; width: 40px; border: 0; text-decoration:none; vertical-align: middle;">
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                        </table>
+                                                                                                        <div style="display:none">
+                                                                                                    <![endif]-->
+                                                                                                    <img width="40" bgcolor="#f0f0f0" alt="twitter black round"  src="https://raw.githubusercontent.com/zaynejaz/MailerLite/main/welcomeEmail/logos/twitterLogo.png" border="0" style="display: block; background: #f0f0f0">
+                                                                                                    <!--[if mso]>
+                                                                                                        </div>
+                                                                                                    <![endif]-->
+                                                                                                </a>
+                                                                                            </td>
+                                                                                            <td width="40" align="center" bgcolor="#f0f0f0" class="pLR-10" style="padding-right: 10px !important; padding-left: 10px !important;">
+                                                                                                <a href="https://www.instagram.com/mailerlite/" target="_blank">
+                                                                                                    <!--[if mso]>
+                                                                                                        <table width="40">
+                                                                                                            <tr>
+                                                                                                                <td>
+                                                                                                                    <img width="40" src="https://raw.githubusercontent.com/zaynejaz/MailerLite/main/welcomeEmail/logos/instagramLogo.png" alt="instagram black round" style="text-align:center; width: 40px; border: 0; text-decoration:none; vertical-align: middle;">
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                        </table>
+                                                                                                        <div style="display:none">
+                                                                                                    <![endif]-->
+                                                                                                    <img width="40" bgcolor="#f0f0f0" alt="instagram black round" src="https://raw.githubusercontent.com/zaynejaz/MailerLite/main/welcomeEmail/logos/instagramLogo.png" border="0" style="display: block; background: #f0f0f0">
+                                                                                                    <!--[if mso]>
+                                                                                                        </div>
+                                                                                                    <![endif]-->
+                                                                                                </a>
+                                                                                            </td>
+                                                                                            <td width="40" align="center" bgcolor="#f0f0f0" class="pLR-10" style="padding-right: 10px !important; padding-left: 10px !important;">
+                                                                                                <a href="https://www.linkedin.com/company/mailerlite-international/" target="_blank">
+                                                                                                <!--[if mso]>
+                                                                                                        <table width="40">
+                                                                                                            <tr>
+                                                                                                                <td>
+                                                                                                                    <img width="40" src="https://raw.githubusercontent.com/zaynejaz/MailerLite/main/welcomeEmail/logos/linkedinLogo.png" alt="linkedin black round" style="text-align:center; width: 40px; border: 0; text-decoration:none; vertical-align: middle;">
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                        </table>
+                                                                                                        <div style="display:none">
+                                                                                                    <![endif]-->
+                                                                                                    <img width="40" bgcolor="#f0f0f0" alt="linkedin black round" src="https://raw.githubusercontent.com/zaynejaz/MailerLite/main/welcomeEmail/logos/linkedinLogo.png" border="0" style="display: block; background: #f0f0f0;">
+                                                                                                    <!--[if mso]>
+                                                                                                        </div>
+                                                                                                    <![endif]-->
+                                                                                                </a>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                    <!--[if (gte mso 9)|(IE)]>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <![endif]-->
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td bgcolor="#f0f0f0" style="background: #f0f0f0;">
+                                                                                    <!-- ========START row spacing======== -->
+                                                                                    <!--[if (gte mso 9)|(IE)]>
+                                                                                <table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
+                                                                                    <tr>
+                                                                                        <td align="center" valign="top" width="600">
+                                                                                            <![endif]-->
+                                                                                    <table role="presentation" width="100%" align="center" bgcolor="#f0f0f0" border="0" class="w-100" cellspacing="0"
+                                                                                        cellpadding="0" style="width:100%;max-width:600px; background: #f0f0f0;">
+                                                                                        <tr>
+                                                                                            <td height="40" style="line-height:40px; min-height:40px"></td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                    <!--[if (gte mso 9)|(IE)]>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <![endif]-->
+                                                                                    <!-- ========END row spacing======== -->
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td align="center" bgcolor="#f0f0f0" class="fontSettings font-fallback" style="font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;color: #4e4e4e !important;font-size: 13px; font-weight: bold; line-height: 20px; background:#F0F0F0">
+                                                                                    MailerLite
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td align="center" bgcolor="#f0f0f0" class="fontSettings font-fallback" 
+                                                                                    style="font-size: 12px; line-height: 20px; background: #f0f0f0;">
+                                                                                    Jono. Basanavičiaus g. 15
+                                                                                    <br>
+                                                                                    Vilnius 03108
+                                                                                    <br>
+                                                                                    Lithuania
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td bgcolor="#f0f0f0" style="background: #f0f0f0;">
+                                                                                    <!-- ========START row spacing======== -->
+                                                                                    <!--[if (gte mso 9)|(IE)]>
+                                            <table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
+                                                <tr>
+                                                    <td align="center" valign="top" width="600">
+                                                        <![endif]-->
+                                                                                    <table role="presentation" width="100%" align="center" bgcolor="#f0f0f0" border="0" class="w-100" cellspacing="0"
+                                                                                        cellpadding="0" style="width:100%;max-width:600px; background: #f0f0f0;">
+                                                                                        <tr>
+                                                                                            <td height="10" style="line-height:10px; min-height:10px"></td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                    <!--[if (gte mso 9)|(IE)]>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <![endif]-->
+                                                                                    <!-- =======END =ow spacing======== -->
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td align="center" bgcolor="#f0f0f0" class="fontSettings font-fallback" style="font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;color: #4e4e4e !important;font-size: 11px; line-height: 20px; background:#f0f0f0;">
+                                                                                    <p class="font-fallback" style="margin:0px;">
+                                                                                        You received this email
+                                                                                        because you signed up on our website.
+                                                                                    </p>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td bgcolor="#f0f0f0" style="background: #f0f0f0;">
+                                                                                    <!-- ========START row spacing======== -->
+                                                                                    <!--[if (gte mso 9)|(IE)]>
+                                            <table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
+                                                <tr>
+                                                    <td align="center" valign="top" width="600">
+                                                        <![endif]-->
+                                                                                    <table role="presentation" width="100%" align="center" bgcolor="#f0f0f0" border="0" class="w-100" cellspacing="0" cellpadding="0" style="width:100%;max-width:600px; background:#f0f0f0;">
+                                                                                        <tr>
+                                                                                            <td height="10" style="line-height:10px; min-height:10px"></td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                    <!--[if (gte mso 9)|(IE)]>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <![endif]-->
+                                                                                    <!-- ========END row spacing======== -->
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td align="center" bgcolor="f0f0f0" class="fontSettings font-fallback" style="font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;color: #4e4e4e !important;font-size: 12px; line-height: 20px;">
+                                                                                    <a href="https://i.imgflip.com/15lw5y.jpg" target="_blank" style="color: #4e4e4e; text-decoration: underline; background: #f0f0f0;">
+                                                                                        Unsubscribe
+                                                                                    </a>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                        <!--[if (gte mso 9)|(IE)]>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <![endif]-->
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <!--[if (gte mso 9)|(IE)]>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <![endif]-->
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!--[if (gte mso 9)|(IE)]>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <![endif]-->
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!--[if (gte mso 9)|(IE)]>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <![endif]-->
                                             <!--[if (gte mso 9)|(IE)]>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                        <![endif]-->
-                                        </td>
-                                    </tr>
-                                </table>
-                                <!--[if (gte mso 9)|(IE)]>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                        <![endif]-->
-                                        <!--[if (gte mso 9)|(IE)]>
-                                        <table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
-                                            <tr>
-                                                <td align="center" valign="top" width="600">
-                                                    <![endif]-->
+                                            <table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
+                                                <tr>
+                                                    <td align="center" valign="top" width="600">
+                                                        <![endif]-->
                                 <table role="presentation" width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="width: 100%; max-width: 600px;">
                                     <tr>
                                         <td bgcolor="#f0f0f0" style="background: #f0f0f0;">
@@ -982,11 +1250,28 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td align="center">
-                                            <a href="https://mailerlite.com/" target="_blank">
-                                                <img height="35" width="86" border="0" alt="MailerLite logo in grayscale" src="https://raw.githubusercontent.com/zaynejaz/MailerLite/main/welcomeEmail/logos/mailerliteLogo-GRY.png" style="display: block; width: 86px; height: 35px;"> 
-                                            </a>
-                                        </td>
+                                        <center>
+                                            <td align="center" bgcolor="#f0f0f0" style="background-color: #f0f0f0;">
+                                                <a href="https://mailerlite.com/" target="_blank">
+                                                    <center>
+                                                    <!--[if mso]>
+                                                        <table width="50%">
+                                                            <tr>
+                                                                <td>
+                                                                    <img height="35" width="86" border="0" src="https://raw.githubusercontent.com/zaynejaz/MailerLite/main/welcomeEmail/logos/mailerliteLogo-GRY.png" alt="MailerLite logo in grayscale" style="text-align: center; width: 35; height:85ox; border: 0; text-decoration:none; vertical-align: middle;">
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <div style="display:none">
+                                                    <![endif]-->
+                                                    <img height="35" width="86" border="0" alt="MailerLite logo in grayscale" src="https://raw.githubusercontent.com/zaynejaz/MailerLite/main/welcomeEmail/logos/mailerliteLogo-GRY.png" style="display: block; width: 86px; height: 35px; border: 0; text-decoration:none;"> 
+                                                    <!--[if mso]>
+                                                        </div>
+                                                    <![endif]-->
+                                                    </center>
+                                                </a>
+                                            </td>
+                                        </center>
                                     </tr>
                                     <tr>
                                         <td bgcolor="#f0f0f0" style="background: #f0f0f0;">
@@ -1024,6 +1309,11 @@
                             </td>
                         </tr>
                     </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                                    </td>
+                                </tr>
+                            </table>
+                        <![endif]-->
                 </td>
             </tr>
         </table>
