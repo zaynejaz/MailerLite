@@ -1,0 +1,164 @@
+:root {
+  --main-bg-color: #fafafa;
+  --secondary-bg-color: #ffffff;
+  --main-font-color: #4e4e4e;
+  --font-dark: #151515;
+  --secondary-font-color: #f0f0f0;
+  --linkGray: #7f8c8d;
+  --linkGreen: #09c269;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  padding-top: 56px !important;
+  padding-bottom: 56px !important;
+  border: none;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--main-font-color);
+  background: var(--main-bg-color);
+  letter-spacing: 0;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li,
+ol,
+u {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  color: var(--main-font-color);
+}
+
+.text-dark {
+  color: var(--font-dark) !important;
+}
+
+.bold {
+  font-weight: 600 !important;
+}
+
+.bolder {
+  font-weight: 700 !important;
+}
+
+.v-spacing {
+  height: 25px;
+}
+
+.v-spacing-10 {
+  height: 10px;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+.navbar {
+  background: var(--secondary-bg-color) !important;
+  background-color: var(--secondary-bg-color) !important;
+  padding: 1rem 0 !important;
+  border-bottom: 1px solid #eaedf1;
+}
+
+.logo-color {
+  transition: all 0.2s ease-in-out;
+}
+.logo-color:hover {
+  color: var(--linkGreen) !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.logo-color img {
+  transition: all 0.1s ease-in-out;
+}
+
+.logo-color:hover img {
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.testLink {
+  text-transform: capitalize;
+  color: var(--linkGray) !important;
+  cursor: pointer;
+}
+
+.link-normal {
+  font-weight: 600;
+  text-decoration: none !important;
+}
+
+.link-normal:hover,
+.link-contact:hover {
+  color: var(--linkGreen) !important;
+}
+
+.textGreen {
+  color: var(--linkGreen) !important;
+}
+
+.link-normal:hover {
+  text-decoration: underline !important;
+}
+
+.card {
+  border-radius: 0px;
+  background: var(--main-bg-color);
+  box-shadow: 20px 20px 60px #d5d5d5, -20px -20px 60px var(--secondary-bg-color);
+}
+
+.btn-success {
+  background: var(--linkGreen);
+  background-color: var(--linkGreen);
+}
+
+ul.custom-dot li:before {
+  /* Unicode bullet symbol */
+  content: "\2022 ";
+  /* Bullet color */
+  color: var(--linkGreen);
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+ul.custom-line li:before {
+  /* Unicode bullet symbol */
+  content: "\2014 ";
+  /* Bullet color */
+  color: var(--linkGreen);
+  padding-left: 0px;
+  padding-right: 5px;
+}
+
+.max-height {
+  max-height: 260px;
+  overflow: hidden;
+}
+
+.no-shadow {
+  background: var(--main-bg-color);
+  box-shadow: 0px 0px 0px #d5d5d5, 0px -0px 0px var(--secondary-bg-color);
+}
+
+.textBG {
+  background: #151515;
+  background-color: #eeeeeee5;
+  width: 100%;
+}
